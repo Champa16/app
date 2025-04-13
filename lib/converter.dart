@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ConverterPage extends StatefulWidget {
-  const ConverterPage({super.key});
+class Converter extends StatefulWidget {
+  const Converter({super.key});
 
   @override
-  State<ConverterPage> createState() => _ConverterPageState();
+  State<Converter> createState() => _ConverterState();
 }
 
-class _ConverterPageState extends State<ConverterPage> {
+class _ConverterState extends State<Converter> {
   TextEditingController textController = TextEditingController();
   double result = 0;
   String? errorText;
-  final double conversionRate = 0.0026;
+  final double conversionRate = 112;
 
   void showMessage(String message, {bool isError = false}) {
     final snackBar = SnackBar(
